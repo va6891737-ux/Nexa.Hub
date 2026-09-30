@@ -63,6 +63,7 @@ body {
     color: #cbd5e1;
     text-decoration: none;
     font-size: 16px;
+
     transition: 0.25s;
 }
 
@@ -184,7 +185,7 @@ body {
    ========================================== */
 
 .tools-section {
-    padding: 100px 6%;
+    padding: 100px 5%;
 
     text-align: center;
 
@@ -208,22 +209,166 @@ body {
 
 
 /* ==========================================
-   TOOL CARDS
-   3 CARDS PER ROW
+   NEXAHUB CARDS - FIXED HORIZONTAL
    ========================================== */
 
 .cards {
     width: 100%;
-
-    max-width: 1200px;
+    max-width: 1400px;
 
     margin: 0 auto;
+    padding: 10px;
 
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
 
-    gap: 30px;
+    /* IMPORTANT */
+    align-items: flex-start;
+
+    gap: 25px;
+}
+
+
+/* ==========================================
+   WEBSITE CARD
+   ========================================== */
+
+.cards .card {
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+
+    /* IMPORTANT */
+    height: 230px;
+    min-height: 230px;
+    max-height: 230px;
+
+    flex: 0 0 260px;
+
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.98),
+            rgba(15, 23, 42, 0.75)
+        );
+
+    border: 1px solid rgba(34, 211, 238, 0.18);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    overflow: hidden;
+}
+
+
+.cards .card:hover {
+    transform: translateY(-8px);
+
+    border-color: #22d3ee;
+
+    box-shadow:
+        0 0 30px rgba(34, 211, 238, 0.3);
+}
+
+
+/* ==========================================
+   ICON
+   ========================================== */
+
+.cards .icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   CARD TITLE
+   ========================================== */
+
+.cards .card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   CARD DESCRIPTION
+   ========================================== */
+
+.cards .card p {
+    color: #94a3b8;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        gap: 20px;
+    }
+
+    .cards .card {
+        width: 230px;
+        min-width: 230px;
+        max-width: 230px;
+
+        flex: 0 0 230px;
+
+        height: 220px;
+        min-height: 220px;
+        max-height: 220px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    .cards {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .cards .card {
+        width: 100%;
+        max-width: 330px;
+        min-width: 0;
+
+        flex: none;
+
+        height: 210px;
+        min-height: 210px;
+        max-height: 210px;
+    }
 }
 
 
@@ -232,9 +377,13 @@ body {
    ========================================== */
 
 .card {
+    width: 260px;
+
     min-height: 230px;
 
-    padding: 45px 25px;
+    flex: 0 0 260px;
+
+    padding: 35px 20px;
 
     display: flex;
 
@@ -260,6 +409,8 @@ body {
     cursor: pointer;
 
     transition: 0.3s;
+
+    overflow: hidden;
 }
 
 .card:hover {
@@ -340,7 +491,24 @@ body {
 .calculator-buttons {
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+   .cards {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.cards .card {
+    width: 260px;
+    height: 230px;
+    flex: 0 0 260px;
+    box-sizing: border-box;
+}
 
     gap: 10px;
 }
@@ -483,6 +651,7 @@ body {
 
     color: #94a3b8;
 }
+
 .file-item button {
     border: none;
 
@@ -624,6 +793,8 @@ body {
 
     color: #22d3ee;
 }
+
+
 /* ==========================================
    ABOUT
    ========================================== */
@@ -671,21 +842,191 @@ footer {
 
 
 /* ==========================================
+   JAVA CARD
+   ========================================== */
+
+.java-card {
+    text-decoration: none;
+
+    color: white;
+
+    display: block;
+}
+
+
+/* ==========================================
+   NEXAHUB CALCULATOR CARD
+   ========================================== */
+
+.calculator-card {
+    min-height: 230px !important;
+
+    height: auto !important;
+
+    padding: 25px 20px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    overflow: hidden !important;
+
+    box-sizing: border-box !important;
+}
+
+.calculator-card .icon {
+    font-size: 45px;
+
+    margin-bottom: 8px;
+}
+
+.calculator-card h3 {
+    font-size: 22px;
+
+    margin: 5px 0;
+}
+
+.calculator-card p {
+    margin-bottom: 15px;
+}
+
+.calculator-card .calculator-box {
+    width: 100% !important;
+
+    max-width: 260px !important;
+
+    margin: 0 auto !important;
+
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    box-shadow: none !important;
+
+    box-sizing: border-box !important;
+}
+
+.calculator-card #calculatorDisplay {
+    width: 100% !important;
+
+    height: 45px !important;
+
+    margin-bottom: 8px !important;
+
+    padding: 8px !important;
+
+    box-sizing: border-box !important;
+
+    background: #020617 !important;
+
+    color: #22d3ee !important;
+
+    border: 1px solid rgba(34, 211, 238, 0.3) !important;
+
+    border-radius: 8px !important;
+
+    text-align: right;
+
+    font-size: 19px;
+}
+
+.calculator-card .calculator-buttons {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns: repeat(4, 1fr) !important;
+
+    gap: 5px !important;
+
+    box-sizing: border-box !important;
+}
+
+.calculator-card .calculator-buttons button {
+    width: 100% !important;
+
+    height: 38px !important;
+
+    padding: 3px !important;
+
+    border: none !important;
+
+    border-radius: 7px !important;
+
+    background: #1e293b !important;
+
+    color: white !important;
+
+    font-size: 14px !important;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-sizing: border-box !important;
+}
+
+.calculator-card .calculator-buttons button:hover {
+    background: #0891b2 !important;
+}
+
+.calculator-card .calculator-buttons .zero {
+    grid-column: span 2 !important;
+}
+
+.calculator-card .calculator-buttons .equal {
+    background:
+        linear-gradient(
+            90deg,
+            #06b6d4,
+            #8b5cf6
+        ) !important;
+}
+/* ==========================================
+   CALCULATOR TOGGLE
+   ========================================== */
+
+.calculator-card .calculator-box {
+    display: none !important;
+}
+
+.calculator-card.active .calculator-box {
+    display: block !important;
+}
+
+
+/* ==========================================
    TABLET
    ========================================== */
 
 @media (max-width: 1000px) {
 
     .cards {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
 
-        gap: 25px;
+        justify-content: center;
     }
 
     .card {
+        width: 230px;
+
+        flex: 0 0 230px;
+
         min-height: 210px;
     }
+
+    .hero h1 {
+        font-size: 90px;
+    }
 }
+
+
 /* ==========================================
    MOBILE
    ========================================== */
@@ -727,13 +1068,30 @@ footer {
         font-size: 30px;
     }
 
-    .cards {
-        grid-template-columns: 1fr;
 
-        gap: 20px;
+    /* Cards mobile */
+
+    .cards {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+        justify-content: center;
     }
 
     .card {
+        width: 100%;
+
+        max-width: 330px;
+
+        flex: 0 0 100%;
+
         min-height: 210px;
 
         padding: 35px 20px;
@@ -746,6 +1104,7 @@ footer {
     .card h3 {
         font-size: 21px;
     }
+
 
     .files-section h2,
     .notes-section h2 {
@@ -760,6 +1119,10 @@ footer {
         align-items: flex-start;
 
         gap: 12px;
+    }
+
+    .file-item button {
+        margin-top: 5px;
     }
 }
 
@@ -780,136 +1143,29 @@ footer {
 
     .card {
         padding: 30px 15px;
+
+        max-width: 300px;
     }
 
     .icon {
         font-size: 45px;
     }
 }
-.java-card {
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-/* =================================
-   NEXAHUB CALCULATOR CARD
-   ================================= */
-
-.calculator-card {
-    min-height: 230px !important;
-    height: auto !important;
-
-    padding: 25px 20px !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-
-    overflow: hidden !important;
-    box-sizing: border-box !important;
-}
-
-.calculator-card .icon {
-    font-size: 45px;
-    margin-bottom: 8px;
-}
-
-.calculator-card h3 {
-    font-size: 22px;
-    margin: 5px 0;
-}
-
-.calculator-card p {
-    margin-bottom: 15px;
-}
-
-.calculator-card .calculator-box {
-    width: 100% !important;
-    max-width: 260px !important;
-
-    margin: 0 auto !important;
-    padding: 0 !important;
-
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-
-    box-sizing: border-box !important;
-}
-
-.calculator-card #calculatorDisplay {
-    width: 100% !important;
-    height: 45px !important;
-
-    margin-bottom: 8px !important;
-    padding: 8px !important;
-
-    box-sizing: border-box !important;
-
-    background: #020617 !important;
-    color: #22d3ee !important;
-
-    border: 1px solid rgba(34, 211, 238, 0.3) !important;
-    border-radius: 8px !important;
-
-    text-align: right;
-    font-size: 19px;
-}
-
-.calculator-card .calculator-buttons {
-    width: 100% !important;
-
+/* FORCE HORIZONTAL CARDS */
+#tools .cards {
     display: grid !important;
-
-    grid-template-columns: repeat(4, 1fr) !important;
-
-    gap: 5px !important;
-
-    box-sizing: border-box !important;
-}
-
-.calculator-card .calculator-buttons button {
+    grid-template-columns: repeat(4, 260px) !important;
+    gap: 25px !important;
     width: 100% !important;
-    height: 38px !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
 
-    padding: 3px !important;
-
-    border: none !important;
-    border-radius: 7px !important;
-
-    background: #1e293b !important;
-    color: white !important;
-
-    font-size: 14px !important;
-    font-weight: bold;
-
-    cursor: pointer;
-
+#tools .cards .card {
+    width: 260px !important;
+    min-width: 260px !important;
+    max-width: 260px !important;
+    height: 230px !important;
     box-sizing: border-box !important;
-}
-
-.calculator-card .calculator-buttons button:hover {
-    background: #0891b2 !important;
-}
-
-.calculator-card .calculator-buttons .zero {
-    grid-column: span 2 !important;
-}
-
-.calculator-card .calculator-buttons .equal {
-    background: linear-gradient(
-        90deg,
-        #06b6d4,
-        #8b5cf6
-    ) !important;
-}
-
-/* Calculator toggle: closed by default, opens only when card has "active" */
-.calculator-card .calculator-box {
-    display: none !important;
-}
-
-.calculator-card.active .calculator-box {
-    display: block !important;
+    margin: 0 !important;
 }
