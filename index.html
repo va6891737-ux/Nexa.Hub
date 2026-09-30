@@ -1,684 +1,718 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>NexaHub</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexaHub</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- ================= NAVIGATION ================= -->
-
-    <nav class="navbar">
-
-        <div class="logo">
-            <span>✦</span> NexaHub
-        </div>
-
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#tools">Tools</a>
-            <a href="#about">About</a>
-        </div>
-
-    </nav>
-
-
-    <!-- ================= HOME ================= -->
-
-    <section id="home" class="hero">
-
-        <p class="small-title">
-            ALL-IN-ONE DIGITAL PLATFORM
-        </p>
-
-        <h1>
-            Nexa<span>Hub</span>
-        </h1>
-
-        <h2>
-            Your Essential Tools in One Place
-        </h2>
-
-        <p class="description">
-            Access useful websites, productivity tools,and more ,all in one simple web interface.
+<!-- ================= NAVIGATION ================= -->
+<nav class="navbar">
+<div class="logo">
+<span>✦</span> NexaHub
+</div>
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#tools">Tools</a>
+<a href="#about">About</a>
+</div>
+</nav>
+<!-- ================= HOME ================= -->
+<section id="home" class="hero">
+<p class="small-title">
+ALL-IN-ONE DIGITAL PLATFORM
 </p>
-
-        <button onclick="scrollToTools()">
-            🚀 Explore NexaHub
-        </button>
-
-    </section>
-
-
-    <!-- ================= TOOLS ================= -->
-
-    <section id="tools" class="tools-section">
-
-        <p class="section-title">
-            EXPLORE TOOLS
-        </p>
-
-        <h2>
-            Everything You Need
-        </h2>
-
-
-        <div class="cards">
-
-<div class="card"
-    onclick="openWebsite('https://www.bbc.com/news')">
-    <div class="icon">📰</div>
-    <h3>BBC News</h3>
-    <p>Read latest news</p>
-</div>
-
-
-            <!-- YouTube -->
-
-            <div class="card"
-                onclick="openWebsite('https://www.youtube.com')">
-
-                <div class="icon">
-                    ▶️
-                </div>
-
-                <h3>
-                    YouTube
-                </h3>
-
-                <p>
-                    Watch and explore videos
-                </p>
-
-            </div>
-
-
-            <!-- Instagram -->
-
-            <div class="card"
-                onclick="openWebsite('https://www.instagram.com')">
-
-                <div class="icon">
-                    📸
-                </div>
-
-                <h3>
-                    Instagram
-                </h3>
-
-                <p>
-                    Connect and explore social media
-                </p>
-
-            </div>
-
-
-            <!-- WhatsApp -->
-
-            <div class="card"
-                onclick="openWebsite('https://web.whatsapp.com')">
-
-                <div class="icon">
-                    💬
-                </div>
-
-                <h3>
-                    WhatsApp
-                </h3>
-
-                <p>
-                    Chat and communicate
-                </p>
-
-            </div>  
-            
-<!-- Games -->
-
-<div class="card"
-    onclick="openWebsite('https://poki.com')">
-
-    <div class="icon">
-        🎮
-    </div>
-
-    <h3>
-        Games
-    </h3>
-
-    <p>
-        Play online games
-    </p>
-
-</div> 
-
-
-<!-- Jobs -->
-
-            <div class="card"
-                onclick="openWebsite('https://www.indeed.com')">
-
-                <div class="icon">
-                    💼
-                </div>
-
-                <h3>
-                    Jobs
-                </h3>
-
-                <p>
-                    Explore job opportunities
-                </p>
-
-            </div>
-<!-- Files -->
-
-<div class="card"
-    onclick="openWebsite('https://drive.google.com')">
-
-    <div class="icon">
-        📁
-    </div>
-
-    <h3>
-        Files
-    </h3>
-
-    <p>
-        Store and manage your files
-    </p>
-
-</div>            
-<!-- Notes -->
-
-<div class="card"
-    onclick="openWebsite('https://keep.google.com')">
-
-    <div class="icon">
-        📝
-    </div>
-
-    <h3>
-        Notes
-    </h3>
-
-    <p>
-        Create and manage your notes
-    </p>
-
-</div>
-
-    
-
- <!-- ChatGPT -->
-
-            <div class="card"
-                onclick="openWebsite('https://chatgpt.com')">
-
-                <div class="icon">
-                    🤖
-                </div>
-
-                <h3>
-                    ChatGPT
-                </h3>
-
-                <p>
-                    Ask questions and get AI assistance
-                </p>
-
-            </div>
-            <!-- Facebook -->
-
-<div class="card"
-    onclick="openWebsite('https://www.facebook.com')">
-
-    <div class="icon">
-        🔵
-    </div>
-
-    <h3>
-        Facebook
-    </h3>
-
-    <p>
-        Connect with friends and communities
-    </p>
-
-</div>
-
-<!-- Snapchat -->
-
-<div class="card"
-    onclick="openWebsite('https://www.snapchat.com')">
-
-    <div class="icon">
-        👻
-    </div>
-
-    <h3>
-        Snapchat
-    </h3>
-
-    <p>
-        Share photos and messages
-    </p>
-
-</div>
-
-<!-- Discord -->
-
-<div class="card"
-    onclick="openWebsite('https://discord.com')">
-
-    <div class="icon">
-        🎮
-    </div>
-
-    <h3>
-        Discord
-    </h3>
-
-    <p>
-        Chat and join communities
-    </p>
-
-</div>
-<!-- Gmail -->
-
-<div class="card"
-    onclick="openWebsite('https://mail.google.com')">
-
-    <div class="icon">
-        📧
-    </div>
-
-    <h3>
-        Gmail
-    </h3>
-
-    <p>
-        Send and receive emails
-    </p>
-
-</div>
-
-
-<!-- Google Drive -->
-
-<div class="card"
-    onclick="openWebsite('https://drive.google.com')">
-
-    <div class="icon">
-        ☁️
-    </div>
-
-    <h3>
-        Google Drive
-    </h3>
-
-    <p>
-        Store and manage your files
-    </p>
-
-</div>
-
-
-<!-- Google Maps -->
-
-<div class="card"
-    onclick="openWebsite('https://maps.google.com')">
-
-    <div class="icon">
-        🗺️
-    </div>
-
-    <h3>
-        Google Maps
-    </h3>
-
-    <p>
-        Find places and directions
-    </p>
-
-</div>
-
-
-<!-- GitHub -->
-
-<div class="card"
-    onclick="openWebsite('https://github.com')">
-
-    <div class="icon">
-        💻
-    </div>
-
-    <h3>
-        GitHub
-    </h3>
-
-    <p>
-        Build and manage coding projects
-    </p>
-
-</div>
-
-
-<!-- Google Classroom -->
-
-<div class="card"
-    onclick="openWebsite('https://classroom.google.com')">
-
-    <div class="icon">
-        📚
-    </div>
-
-    <h3>
-        Google Classroom
-    </h3>
-
-    <p>
-        Manage classes and assignments
-    </p>
-
-</div>
-
-
-<!-- Canva -->
-
-<div class="card"
-    onclick="openWebsite('https://www.canva.com')">
-
-    <div class="icon">
-        🎨
-    </div>
-
-    <h3>
-        Canva
-    </h3>
-
-    <p>
-        Create designs and presentations
-    </p>
-
-</div>
-
-
-<!-- SoundCloud -->
-
-<div class="card"
-    onclick="openWebsite('https://soundcloud.com')">
-
-    <div class="icon">
-        🎵
-    </div>
-
-    <h3>
-        SoundCloud
-    </h3>
-
-    <p>
-        Discover music and audio
-    </p>
-
-</div>
-
-
-<!-- Telegram -->
-
-<div class="card"
-    onclick="openWebsite('https://web.telegram.org')">
-
-    <div class="icon">
-        ✈️
-    </div>
-
-    <h3>
-        Telegram
-    </h3>
-
-    <p>
-        Chat and share messages
-    </p>
-
-</div>
-
-
-<!-- LinkedIn -->
-
-<div class="card"
-    onclick="openWebsite('https://www.linkedin.com')">
-
-    <div class="icon">
-        💼
-    </div>
-
-    <h3>
-        LinkedIn
-    </h3>
-
-    <p>
-        Connect with professionals
-    </p>
-
-</div>
-
-
-<!-- Pinterest -->
-
-<div class="card"
-    onclick="openWebsite('https://www.pinterest.com')">
-
-    <div class="icon">
-        📌
-    </div>
-
-    <h3>
-        Pinterest
-    </h3>
-
-    <p>
-        Discover ideas and inspiration
-    </p>
-
-</div>
-<!-- Google Translate -->
-
-<div class="card"
-    onclick="openWebsite('https://translate.google.com')">
-
-    <div class="icon">
-        🌐
-    </div>
-
-    <h3>
-        Google Translate
-    </h3>
-
-    <p>
-        Translate languages easily
-    </p>
-
-</div>
-
-
-<!-- Google Calendar -->
-
-<div class="card"
-    onclick="openWebsite('https://calendar.google.com')">
-
-    <div class="icon">
-        📅
-    </div>
-
-    <h3>
-        Google Calendar
-    </h3>
-
-    <p>
-        Manage events and schedules
-    </p>
-
-</div>
-
- <!-- Chrome -->
-
-<div class="card"
-    onclick="openWebsite('https://www.google.com/chrome/')">
-
-    <div class="icon">
-        🌐
-    </div>
-
-    <h3>
-        Chrome
-    </h3>
-
-    <p>
-        Browse the web with Chrome
-    </p>
-
-</div>
-
-<!-- Python Programming -->
-
-<div class="card"
-    onclick="openWebsite('https://www.programiz.com/python-programming/online-compiler/')">
-
-    <div class="icon">
-        🐍
-    </div>
-
-    <h3>
-        Python Programming
-    </h3>
-
-    <p>
-        Write and run Python programs
-    </p>
-
-</div>
-<!-- Vimeo -->
-
-<div class="card"
-    onclick="openWebsite('https://vimeo.com')">
-
-    <div class="icon">
-        🎬
-    </div>
-
-    <h3>
-        Vimeo
-    </h3>
-
-    <p>
-        Watch and share videos
-    </p>
-
-</div>
-
-
-<!-- Dailymotion -->
-
-<div class="card"
-    onclick="openWebsite('https://www.dailymotion.com')">
-
-    <div class="icon">
-        📺
-    </div>
-
-    <h3>
-        Dailymotion
-    </h3>
-
-    <p>
-        Discover online videos
-    </p>
-
-</div>
-
-
-<!-- Twitch -->
-
-<div class="card"
-    onclick="openWebsite('https://www.twitch.tv')">
-
-    <div class="icon">
-        🎮
-    </div>
-
-    <h3>
-        Streams
-    </h3>
-
-    <p>
-        Watch live streams
-    </p>
-
-</div>
-
-<!-- Java Programming -->
-
-<div class="card"
-    onclick="openWebsite('https://www.programiz.com/java-programming/online-compiler/')">
-
-    <div class="icon">
-        ☕
-    </div>
-
-    <h3>
-        Java Programming
-    </h3>
-
-    <p>
-        Write and run Java programs
-    </p>
-
-</div>
-
+<h1>
+Nexa<span>Hub</span>
+</h1>
+<h2>
+Your Essential Tools in One Place
+</h2>
+<p class="description">
+Access useful websites, productivity tools, learning resources,
+social platforms and more, all in one simple web interface.
+</p>
+<button onclick="scrollToTools()">
+🚀Explore NexaHub
+</button>
 </section>
+<!-- ================= TOOLS ================= -->
+<section id="tools" class="tools-section">
+<p class="section-title">
+EXPLORE TOOLS
+</p>
+<h2>
+108 Websites &amp; Digital Tools
+</h2>
+<div class="cards">
+<!-- 01 BBC NEWS -->
+<div class="card" onclick="openWebsite('https://www.bbc.com/news')">
+<div class="icon">📰</div>
+<h3>BBC News</h3>
+<p>Read latest news</p>
+</div>
+<!-- 02 YOUTUBE -->
+<div class="card" onclick="openWebsite('https://www.youtube.com')">
+<div class="icon">▶️</div>
+<h3>YouTube</h3>
+<p>Watch and explore videos</p>
+</div>
+<!-- 03 INSTAGRAM -->
+<div class="card" onclick="openWebsite('https://www.instagram.com')">
+<div class="icon">📷</div> <h3>Instagram</h3>
+<p>Connect and explore social media</p>
+</div>
+<!-- 04 WHATSAPP -->
+<div class="card" onclick="openWebsite('https://web.whatsapp.com')">
+<div class="icon">💬</div>
+<h3>WhatsApp</h3>
+<p>Chat and communicate</p>
+</div>
+<!-- 05 FACEBOOK -->
+<div class="card" onclick="openWebsite('https://www.facebook.com')">
+<div class="icon">👥</div>
+<h3>Facebook</h3>
+<p>Connect with friends and communities</p>
+</div>
+<!-- 06 TELEGRAM -->
+<div class="card" onclick="openWebsite('https://web.telegram.org')">
+<div class="icon">✈️</div>
+<h3>Telegram</h3>
+<p>Chat and share messages</p>
+</div>
+<!-- 07 SNAPCHAT -->
+<div class="card" onclick="openWebsite('https://www.snapchat.com')">
+<div class="icon">👻</div>
+<h3>Snapchat</h3>
+<p>Share photos and messages</p>
+</div>
+<!-- 08 LINKEDIN -->
+<div class="card" onclick="openWebsite('https://www.linkedin.com')">
+<div class="icon">💼</div>
+<h3>LinkedIn</h3>
+<p>Connect with professionals</p>
+</div>
+<!-- 09 PINTEREST -->
+<div class="card" onclick="openWebsite('https://www.pinterest.com')">
+<div class="icon">📌</div>
+<h3>Pinterest</h3>
+<p>Discover ideas and inspiration</p>
+</div>
+<!-- 10 DISCORD -->
+<div class="card" onclick="openWebsite('https://discord.com')">
+<div class="icon">🎮</div>
+<h3>Discord</h3>
+<p>Chat and join communities</p>
+</div>
+<!-- 11 REDDIT -->
+<div class="card" onclick="openWebsite('https://www.reddit.com')">
+<div class="icon">🤖</div>
+<h3>Reddit</h3>
+<p>Explore online communities</p>
+</div>
+<!-- 12 TIKTOK -->
+<div class="card" onclick="openWebsite('https://www.tiktok.com')">
+<div class="icon">🎵</div>
+<h3>TikTok</h3>
+<p>Discover short videos</p>
+</div>
+<!-- 13 X -->
+<div class="card" onclick="openWebsite('https://x.com')">
+<div class="icon">🕹️</div>
 
+<h3>X</h3>
+<p>Follow news and conversations</p>
+</div>
+<!-- 14 GAMES -->
+<div class="card" onclick="openWebsite('https://poki.com')">
+<div class="icon">🎮</div>
+<h3>Games</h3>
+<p>Play online games</p>
+</div>
+<!-- 15 INDEED JOBS -->
+<div class="card" onclick="openWebsite('https://www.indeed.com')">
+<div class="icon">🔍</div>
+<h3>Indeed Jobs</h3>
+<p>Explore job opportunities</p>
+</div>
+<!-- 16 NAUKRI -->
+<div class="card" onclick="openWebsite('https://www.naukri.com')">
+<div class="icon">💼</div>
+<h3>Naukri</h3>
+<p>Search for jobs</p>
+</div>
+<!-- 17 INTERNSHALA -->
+<div class="card" onclick="openWebsite('https://internshala.com')">
+<div class="icon">🎓</div>
+<h3>Internshala</h3>
+<p>Find internships and jobs</p>
+</div>
+<!-- 18 GLASSDOOR -->
+<div class="card" onclick="openWebsite('https://www.glassdoor.com')">
+<div class="icon">🏢</div>
+<h3>Glassdoor</h3>
+<p>Explore companies and jobs</p>
+</div>
+<!-- 19 GMAIL -->
+<div class="card" onclick="openWebsite('https://mail.google.com')">
+<div class="icon">📧</div>
+<h3>Gmail</h3>
+<p>Send and receive emails</p>
+</div>
+<!-- 20 GOOGLE DRIVE --> <div class="card" onclick="openWebsite('https://drive.google.com')">
+<div class="icon">📁</div>
+<h3>Google Drive</h3>
+<p>Store and manage files</p>
+</div>
+<!-- 21 GOOGLE MAPS -->
+<div class="card" onclick="openWebsite('https://maps.google.com')">
+<div class="icon">🗺️</div>
+<h3>Google Maps</h3>
+<p>Find places and directions</p>
+</div>
+<!-- 22 GOOGLE CLASSROOM -->
+<div class="card" onclick="openWebsite('https://classroom.google.com')">
+<div class="icon">🏫</div>
+<h3>Google Classroom</h3>
+<p>Manage classes and assignments</p>
+</div>
+<!-- 23 GOOGLE CALENDAR -->
+<div class="card" onclick="openWebsite('https://calendar.google.com')">
+<div class="icon">📅</div>
+<h3>Google Calendar</h3>
+<p>Manage events and schedules</p>
+</div>
+<!-- 24 GOOGLE TRANSLATE -->
+<div class="card" onclick="openWebsite('https://translate.google.com')">
+<div class="icon">🌐</div>
+<h3>Google Translate</h3>
+<p>Translate languages easily</p>
+</div>
+<!-- 25 GOOGLE DOCS -->
+<div class="card" onclick="openWebsite('https://docs.google.com')">
+<div class="icon">📄</div>
+<h3>Google Docs</h3>
+<p>Create and edit documents</p>
+</div>
+<!-- 26 GOOGLE SHEETS -->
+<div class="card" onclick="openWebsite('https://sheets.google.com')">
+<div class="icon">📊</div>
+<h3>Google Sheets</h3>
+<p>Create and manage spreadsheets</p>
+</div>
+<!-- 27 GOOGLE SLIDES -->
+<div class="card" onclick="openWebsite('https://slides.google.com')">
+<div class="icon">📊</div>
+<h3>Google Slides</h3>
+<p>Create presentations</p>
+</div>
+<!-- 28 GOOGLE FORMS -->
+<div class="card" onclick="openWebsite('https://forms.google.com')">
+<div class="icon">📝</div>
+<h3>Google Forms</h3>
+<p>Create online forms</p>
+</div>
+<!-- 29 GOOGLE MEET -->
+<div class="card" onclick="openWebsite('https://meet.google.com')">
+<div class="icon">📹</div>
+<h3>Google Meet</h3>
+<p>Join online meetings</p>
+</div>
+<!-- 30 GOOGLE PHOTOS -->
+<div class="card" onclick="openWebsite('https://photos.google.com')">
+<div class="icon">🖼️</div>
+<h3>Google Photos</h3>
+<p>Store and manage photos</p>
+</div>
+<!-- 31 CHROME -->
+<div class="card" onclick="openWebsite('https://www.google.com/chrome/')">
+<div class="icon">🌍</div>
+<h3>Chrome</h3>
+<p>Browse the web</p>
+</div>
+<!-- 32 CHATGPT -->
+<div class="card" onclick="openWebsite('https://chatgpt.com')">
+<div class="icon">🧠</div>
+<h3>ChatGPT</h3>
+<p>AI assistance and questions</p>
+</div>
+<!-- 33 CANVA -->
+<div class="card" onclick="openWebsite('https://www.canva.com')">
+<div class="icon">🎨</div>
+<h3>Canva</h3>
+<p>Create designs and presentations</p>
+</div>
+<!-- 34 GITHUB -->
+<div class="card" onclick="openWebsite('https://github.com')">
+<div class="icon">🐙</div>
+<h3>GitHub</h3>
+<p>Manage coding projects</p>
+</div>
+<!-- 35 GITLAB -->
+<div class="card" onclick="openWebsite('https://gitlab.com')">
+<div class="icon">🦊</div>
+<h3>GitLab</h3>
+<p>Manage software projects</p>
+</div>
+<!-- 36 BITBUCKET -->
+<div class="card" onclick="openWebsite('https://bitbucket.org')">
+<div class="icon">🪣</div>
+<h3>Bitbucket</h3>
+<p>Host coding repositories</p> </div>
+<!-- 37 STACK OVERFLOW -->
+<div class="card" onclick="openWebsite('https://stackoverflow.com')">
+<div class="icon">📚</div>
+<h3>Stack Overflow</h3>
+<p>Find programming answers</p>
+</div>
+<!-- 38 W3SCHOOLS -->
+<div class="card" onclick="openWebsite('https://www.w3schools.com')">
+<div class="icon">🌱</div>
+<h3>W3Schools</h3>
+<p>Learn web development</p>
+</div>
+<!-- 39 MDN WEB DOCS -->
+<div class="card" onclick="openWebsite('https://developer.mozilla.org')">
+<div class="icon">📖</div>
+<h3>MDN Web Docs</h3>
+<p>Web development documentation</p>
+</div>
+<!-- 40 GEEKSFORGEEKS -->
+<div class="card" onclick="openWebsite('https://www.geeksforgeeks.org')">
+<div class="icon">💻</div>
+<h3>GeeksforGeeks</h3>
+<p>Learn coding and computer science</p>
+</div>
+<!-- 41 PYTHON PROGRAMMING -->
+<div class="card" onclick="openWebsite('https://www.programiz.com/python-programming/online-compiler/')">
+<div class="icon">🐍</div>
+<h3>Python Programming</h3>
+<p>Write and run Python programs</p>
+</div>
+<!-- 42 JAVA PROGRAMMING -->
+<div class="card" onclick="openWebsite('https://www.programiz.com/java-programming/online-compiler/')">
+<div class="icon">☕</div>
+<h3>Java Programming</h3>
+<p>Write and run Java programs</p>
+</div>
+<!-- 43 REPLIT -->
+<div class="card" onclick="openWebsite('https://replit.com')">
+<div class="icon">⚡</div>
+<h3>Replit</h3>
+<p>Code online</p>
+</div>
+<!-- 44 CODEPEN -->
+<div class="card" onclick="openWebsite('https://codepen.io')">
+<div class="icon">✒️</div>
+<h3>CodePen</h3>
+<p>Build web projects</p>
+</div>
+<!-- 45 HACKERRANK -->
+<div class="card" onclick="openWebsite('https://www.hackerrank.com')">
+<div class="icon">🏆</div>
+<h3>HackerRank</h3>
+<p>Practice programming</p>
+</div>
+<!-- 46 LEETCODE -->
+<div class="card" onclick="openWebsite('https://leetcode.com')">
+<div class="icon">🧩</div>
+<h3>LeetCode</h3>
+<p>Practice coding problems</p>
+</div>
+<!-- 47 COURSERA -->
+<div class="card" onclick="openWebsite('https://www.coursera.org')">
+<div class="icon">🎓</div>
+<h3>Coursera</h3>
+<p>Online courses</p>
+</div>
+<!-- 48 EDX -->
+<div class="card" onclick="openWebsite('https://www.edx.org')">
+<div class="icon">🏛️</div>
+<h3>edX</h3>
+<p>Learn from online courses</p>
+</div>
+<!-- 49 KHAN ACADEMY -->
+<div class="card" onclick="openWebsite('https://www.khanacademy.org')">
+<div class="icon">📐</div>
+<h3>Khan Academy</h3>
+<p>Learn academic subjects</p>
+</div>
+<!-- 50 UDEMY -->
+<div class="card" onclick="openWebsite('https://www.udemy.com')">
+<div class="icon">🎬</div>
+<h3>Udemy</h3>
+<p>Learn new skills</p>
+</div>
+<!-- 51 NPTEL -->
+<div class="card" onclick="openWebsite('https://nptel.ac.in')">
+<div class="icon">📡</div>
+<h3>NPTEL</h3>
+<p>Access academic courses</p>
+</div>
+<!-- 52 MIT OPENCOURSEWARE -->
+<div class="card" onclick="openWebsite('https://ocw.mit.edu')">
+<div class="icon">🔬</div>
+<h3>MIT OpenCourseWare</h3>
+<p>Access open course materials</p>
+</div>
+<!-- 53 WIKIPEDIA -->
+<div class="card" onclick="openWebsite('https://www.wikipedia.org')">
+<div class="icon">📚</div>
+ <h3>Wikipedia</h3>
 
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about" class="about">
-
-        <p class="section-title">
-            ABOUT NEXAHUB
-        </p>
-
-        <h2>
-            One Platform. Many Possibilities.
-        </h2>
-
-        <p>
-            NexaHub brings useful digital tools and services
-            together in one simple web interface.
-        </p>
-
-    </section>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <p>
-            © 2026 NexaHub | All-in-One Web Platform
-        </p>
-
-    </footer>
-
-
-    <!-- ================= JAVASCRIPT ================= -->
-
-    <script src="script.js"></script>
-
+<p>Explore knowledge and information</p>
+</div>
+<!-- 54 BRITANNICA -->
+<div class="card" onclick="openWebsite('https://www.britannica.com')">
+<div class="icon">📜</div>
+<h3>Britannica</h3>
+<p>Explore reference information</p>
+</div>
+<!-- 55 GOOGLE SCHOLAR -->
+<div class="card" onclick="openWebsite('https://scholar.google.com')">
+<div class="icon">🔎</div>
+<h3>Google Scholar</h3>
+<p>Find academic research</p>
+</div>
+<!-- 56 RESEARCHGATE -->
+<div class="card" onclick="openWebsite('https://www.researchgate.net')">
+<div class="icon">🧪</div>
+<h3>ResearchGate</h3>
+<p>Explore research publications</p>
+</div>
+<!-- 57 ARXIV -->
+<div class="card" onclick="openWebsite('https://arxiv.org')">
+<div class="icon">📑</div>
+<h3>arXiv</h3>
+<p>Explore research papers</p>
+</div>
+<!-- 58 PUBMED -->
+<div class="card" onclick="openWebsite('https://pubmed.ncbi.nlm.nih.gov')">
+<div class="icon">⚕️</div>
+<h3>PubMed</h3>
+<p>Search research literature</p>
+</div>
+<!-- 59 KAGGLE -->
+<div class="card" onclick="openWebsite('https://www.kaggle.com')">
+<div class="icon">📈</div>
+<h3>Kaggle</h3>
+<p>Data science and datasets</p>
+</div>
+<!-- 60 TABLEAU -->
+<div class="card" onclick="openWebsite('https://www.tableau.com')">
+<div class="icon">📊</div>
+<h3>Tableau</h3>
+<p>Create data visualizations</p>
+</div>
+<!-- 61 POWER BI -->
+<div class="card" onclick="openWebsite('https://powerbi.microsoft.com')">
+<div class="icon">📉</div>
+<h3>Power BI</h3>
+<p>Business data analytics</p>
+</div>
+<!-- 62 DATAWRAPPER -->
+<div class="card" onclick="openWebsite('https://www.datawrapper.de')">
+<div class="icon">📊</div>
+<h3>Datawrapper</h3>
+<p>Create data charts</p>
+</div>
+<!-- 63 NOTION -->
+<div class="card" onclick="openWebsite('https://www.notion.so')">
+<div class="icon">🗒️</div>
+<h3>Notion</h3>
+<p>Organize notes and projects</p>
+</div>
+<!-- 64 TRELLO -->
+<div class="card" onclick="openWebsite('https://trello.com')">
+<div class="icon">📋</div>
+<h3>Trello</h3>
+<p>Manage tasks and projects</p>
+</div>
+<!-- 65 SLACK -->
+<div class="card" onclick="openWebsite('https://slack.com')">
+<div class="icon">💬</div>
+<h3>Slack</h3>
+<p>Team communication</p>
+</div>
+<!-- 66 ZOOM -->
+<div class="card" onclick="openWebsite('https://zoom.us')">
+<div class="icon">🎥</div>
+<h3>Zoom</h3>
+<p>Online meetings</p>
+</div>
+<!-- 67 MICROSOFT TEAMS -->
+<div class="card" onclick="openWebsite('https://www.microsoft.com/microsoft-teams')">
+<div class="icon">👨‍💼</div>
+<h3>Microsoft Teams</h3>
+<p>Team collaboration</p>
+</div>
+<!-- 68 DROPBOX -->
+<div class="card" onclick="openWebsite('https://www.dropbox.com')">
+<div class="icon">📦</div>
+<h3>Dropbox</h3>
+<p>Store and share files</p>
+</div>
+<!-- 69 ONEDRIVE -->
+<div class="card" onclick="openWebsite('https://onedrive.live.com')">
+<div class="icon">☁️</div>
+<h3>OneDrive</h3>
+<p>Cloud file storage</p>
+</div>
+<!-- 70 OUTLOOK -->
+ <div class="card" onclick="openWebsite('https://outlook.live.com')">
+<div class="icon">📮</div>
+<h3>Outlook</h3>
+<p>Email and calendar</p>
+</div>
+<!-- 71 MICROSOFT -->
+<div class="card" onclick="openWebsite('https://www.microsoft.com')">
+<div class="icon">🪟</div>
+<h3>Microsoft</h3>
+<p>Microsoft products and services</p>
+</div>
+<!-- 72 ADOBE -->
+<div class="card" onclick="openWebsite('https://www.adobe.com')">
+<div class="icon">🅰️</div>
+<h3>Adobe</h3>
+<p>Creative tools and software</p>
+</div>
+<!-- 73 FIGMA -->
+<div class="card" onclick="openWebsite('https://www.figma.com')">
+<div class="icon">🎨</div>
+<h3>Figma</h3>
+<p>Design interfaces</p>
+</div>
+<!-- 74 REMOVE.BG -->
+<div class="card" onclick="openWebsite('https://www.remove.bg')">
+<div class="icon">✂️</div>
+<h3>Remove.bg</h3>
+<p>Remove image backgrounds</p>
+</div>
+<!-- 75 TINYPNG -->
+<div class="card" onclick="openWebsite('https://tinypng.com')">
+<div class="icon">🐼</div>
+<h3>TinyPNG</h3>
+<p>Compress images</p>
+</div>
+<!-- 76 GRAMMARLY -->
+<div class="card" onclick="openWebsite('https://www.grammarly.com')">
+<div class="icon">✍️</div>
+<h3>Grammarly</h3>
+<p>Improve writing</p>
+</div>
+<!-- 77 QUILLBOT -->
+<div class="card" onclick="openWebsite('https://quillbot.com')">
+<div class="icon">🪶</div>
+<h3>QuillBot</h3>
+<p>Writing assistance</p>
+</div>
+<!-- 78 MEDIUM -->
+<div class="card" onclick="openWebsite('https://medium.com')">
+<div class="icon">📝</div>
+<h3>Medium</h3>
+<p>Read and publish articles</p>
+</div>
+<!-- 79 UNSPLASH -->
+<div class="card" onclick="openWebsite('https://unsplash.com')">
+<div class="icon">📷</div>
+<h3>Unsplash</h3>
+<p>Find free photos</p>
+</div>
+<!-- 80 PEXELS -->
+<div class="card" onclick="openWebsite('https://www.pexels.com')">
+<div class="icon">🎞️</div>
+<h3>Pexels</h3>
+<p>Find stock photos and videos</p>
+</div>
+<!-- 81 PIXABAY -->
+<div class="card" onclick="openWebsite('https://pixabay.com')">
+<div class="icon">🌄</div>
+<h3>Pixabay</h3>
+<p>Explore free media</p>
+</div>
+<!-- 82 SOUNDCLOUD -->
+<div class="card" onclick="openWebsite('https://soundcloud.com')">
+<div class="icon">🎧</div>
+<h3>SoundCloud</h3>
+<p>Discover music and audio</p>
+</div>
+<!-- 83 SPOTIFY -->
+<div class="card" onclick="openWebsite('https://open.spotify.com')">
+<div class="icon">🎶</div>
+<h3>Spotify</h3>
+<p>Listen to music and podcasts</p>
+</div>
+<!-- 84 VIMEO -->
+<div class="card" onclick="openWebsite('https://vimeo.com')">
+<div class="icon">📼</div>
+<h3>Vimeo</h3>
+<p>Watch and share videos</p>
+</div>
+<!-- 85 DAILYMOTION -->
+<div class="card" onclick="openWebsite('https://www.dailymotion.com')">
+<div class="icon">📺</div>
+<h3>Dailymotion</h3>
+<p>Discover online videos</p>
+</div>
+<!-- 86 TWITCH -->
+<div class="card" onclick="openWebsite('https://www.twitch.tv')">
+<div class="icon">🟣</div>
+<h3>Twitch</h3>
+<p>Watch live streams</p> </div>
+<!-- 87 NETFLIX -->
+<div class="card" onclick="openWebsite('https://www.netflix.com')">
+<div class="icon">🍿</div>
+<h3>Netflix</h3>
+<p>Watch movies and shows</p>
+</div>
+<!-- 88 AMAZON -->
+<div class="card" onclick="openWebsite('https://www.amazon.com')">
+<div class="icon">📦</div>
+<h3>Amazon</h3>
+<p>Shop online</p>
+</div>
+<!-- 89 FLIPKART -->
+<div class="card" onclick="openWebsite('https://www.flipkart.com')">
+<div class="icon">🛒</div>
+<h3>Flipkart</h3>
+<p>Shop online in India</p>
+</div>
+<!-- 90 EBAY -->
+<div class="card" onclick="openWebsite('https://www.ebay.com')">
+<div class="icon">🏷️</div>
+<h3>eBay</h3>
+<p>Buy and sell products</p>
+</div>
+<!-- 91 WOLFRAMALPHA -->
+<div class="card" onclick="openWebsite('https://www.wolframalpha.com')">
+<div class="icon">🧮</div>
+<h3>WolframAlpha</h3>
+<p>Computational knowledge</p>
+</div>
+<!-- 92 CALCULATOR.NET -->
+<div class="card" onclick="openWebsite('https://www.calculator.net')">
+<div class="icon">🔢</div>
+<h3>Calculator.net</h3>
+<p>Online calculators</p>
+</div>
+<!-- 93 BRITANNICA KIDS -->
+<div class="card" onclick="openWebsite('https://kids.britannica.com')">
+<div class="icon">🧒</div>
+<h3>Britannica Kids</h3>
+<p>Explore educational resources</p>
+</div>
+<!-- 94 INTERNET ENCYCLOPEDIA OF PHILOSOPHY -->
+<div class="card" onclick="openWebsite('https://iep.utm.edu')">
+<div class="icon">🤔</div>
+<h3>Internet Encyclopedia of Philosophy</h3>
+<p>Explore philosophy resources</p>
+</div>
+<!-- 95 BING -->
+<div class="card" onclick="openWebsite('https://www.bing.com')">
+<div class="icon">🔍</div>
+<h3>Bing</h3>
+<p>Search the web</p>
+</div>
+<!-- 96 TRIPADVISOR -->
+<div class="card" onclick="openWebsite('https://www.tripadvisor.com')">
+<div class="icon">🧳</div>
+<h3>Tripadvisor</h3>
+<p>Explore travel information</p>
+</div>
+<!-- 97 BOOKING.COM -->
+<div class="card" onclick="openWebsite('https://www.booking.com')">
+<div class="icon">🏨</div>
+<h3>Booking.com</h3>
+<p>Find accommodation</p>
+</div>
+<!-- 98 GOOGLE FLIGHTS -->
+<div class="card" onclick="openWebsite('https://www.google.com/travel/flights')">
+<div class="icon">🛫</div>
+<h3>Google Flights</h3>
+<p>Search flights</p>
+</div>
+<!-- 99 PAYPAL -->
+<div class="card" onclick="openWebsite('https://www.paypal.com')">
+<div class="icon">💳</div>
+<h3>PayPal</h3>
+<p>Online payment services</p>
+</div>
+<!-- 100 INTERNET ARCHIVE -->
+<div class="card" onclick="openWebsite('https://archive.org')">
+<div class="icon">🏛️</div>
+<h3>Internet Archive</h3>
+<p>Access digital archives</p>
+</div>
+<!-- 101 WAYBACK MACHINE -->
+<div class="card" onclick="openWebsite('https://web.archive.org')">
+<div class="icon">⏪</div>
+<h3>Wayback Machine</h3>
+<p>View archived webpages</p>
+</div>
+<!-- 102 VIRUSTOTAL -->
+<div class="card" onclick="openWebsite('https://www.virustotal.com')">
+<div class="icon">🛡️</div>
+<h3>VirusTotal</h3>
+<p>Check files and URLs</p>
+</div>
+<!-- 103 DRIBBBLE -->
+<div class="card" onclick="openWebsite('https://dribbble.com')">
+<div class="icon">🏀</div> <h3>Dribbble</h3>
+<p>Explore design inspiration</p>
+</div>
+<!-- 104 BEHANCE -->
+<div class="card" onclick="openWebsite('https://www.behance.net')">
+<div class="icon">🎭</div>
+<h3>Behance</h3>
+<p>Explore creative portfolios</p>
+</div>
+<!-- 105 ADOBE EXPRESS -->
+<div class="card" onclick="openWebsite('https://www.adobe.com/express/')">
+<div class="icon">🖌️</div>
+<h3>Adobe Express</h3>
+<p>Create graphics and visual content</p>
+</div>
+<!-- 106 GOOGLE -->
+<div class="card" onclick="openWebsite('https://www.google.com')">
+<div class="icon">🔍</div>
+<h3>Google</h3>
+<p>Search the web</p>
+</div>
+<!-- 107 GOOGLE KEEP -->
+<div class="card" onclick="openWebsite('https://keep.google.com')">
+<div class="icon">💡</div>
+<h3>Google Keep</h3>
+<p>Create and organize notes</p>
+</div>
+<!-- 108 GOOGLE GEMINI -->
+<div class="card" onclick="openWebsite('https://gemini.google.com')">
+<div class="icon">✨</div>
+<h3>Google Gemini</h3>
+<p>Explore Google's AI assistant</p>
+</div>
+</div>
+</section>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about">
+<p class="section-title">
+ABOUT NEXAHUB
+</p>
+<h2>
+One Platform. Many Possibilities.
+</h2>
+<p>
+NexaHub brings useful websites and digital tools together
+in one simple and accessible interface.
+</p>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer>
+<p>
+© 2026 NexaHub | 108 Websites &amp; Digital Tools
+</p>
+</footer>
+<!-- ================= JAVASCRIPT ================= -->
+<script src="script.js"></script>
 </body>
-
 </html>
