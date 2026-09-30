@@ -499,3 +499,12 @@ function calculateResult() {
         display.value = "Error";
     }
 }
+script.js
+function scrollToTools() {
+document.getElementById("tools").scrollIntoView({
+behavior: "smooth"
+});
+}
+function openWebsite(url) {
+window.open(url, "_blank", "noopener,noreferrer");
+}
