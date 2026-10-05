@@ -508,3 +508,17 @@ behavior: "smooth"
 function openWebsite(url) {
 window.open(url, "_blank", "noopener,noreferrer");
 }
+function searchTools() {
+    const searchText = document.getElementById("searchInput").value.toLowerCase();
+    const cards = document.querySelectorAll(".cards .card");
+
+    cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(searchText)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
