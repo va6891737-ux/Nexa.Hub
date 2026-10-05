@@ -1195,3 +1195,37 @@ footer {
 .search-box input:focus {
     border-color: #00d9ff;
 }
+
+/* SEARCH BOX */
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 40px;
+}
+
+.search-box input {
+    width: 500px;
+    max-width: 90%;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.10);
+    color: white;
+
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #cccccc;
+}
+
+.search-box input:focus {
+    border-color: #00d9ff;
+}
