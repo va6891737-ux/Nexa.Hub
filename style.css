@@ -1169,3 +1169,29 @@ footer {
     box-sizing: border-box !important;
     margin: 0 !important;
 }
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 35px;
+}
+
+.search-box input {
+    width: 500px;
+    max-width: 90%;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #aaa;
+}
+
+.search-box input:focus {
+    border-color: #00d9ff;
+}
