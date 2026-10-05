@@ -1273,3 +1273,17 @@ footer {
         width: 90%;
     }
 }
+.search-box {
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    margin: 35px auto !important;
+}
+
+.search-box input {
+    width: 500px !important;
+    max-width: 90%;
+    height: 52px;
+    box-sizing: border-box;
+}
