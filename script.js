@@ -17,7 +17,6 @@ function searchTools() {
     card.style.display = text.includes(query) ? "" : "none";
   });
 }
-
 // Sidebar menu highlight
 document.querySelectorAll(".sidebar-link").forEach(link => {
   link.addEventListener("click", () => {
@@ -107,3 +106,12 @@ function updateToolCount() {
 }
 
 updateToolCount();
+function searchTools() {
+  const input = document.getElementById("searchInput");
+  const query = input.value.toLowerCase().trim();
+
+  document.querySelectorAll(".card").forEach(card => {
+    const text = card.innerText.toLowerCase();
+    card.style.display = text.includes(query) ? "" : "none";
+  });
+}
