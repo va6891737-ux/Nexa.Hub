@@ -1620,3 +1620,77 @@ footer {
 .dashboard .quick-arrow {
     color: #67e8f9 !important;
 }
+/* PROFESSIONAL NEXAHUB DASHBOARD */
+:root {
+  --bg-main: #080d1b;
+  --bg-card: #111c33;
+  --accent: #22d3ee;
+  --purple: #8b5cf6;
+  --text-main: #f8fafc;
+  --text-muted: #a9b8d0;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #111c33, #090f20);
+  border-right: 1px solid #263957;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.sidebar button,
+.sidebar a {
+  transition: all 0.25s ease;
+  border-radius: 10px;
+}
+
+.sidebar button:hover,
+.sidebar a:hover {
+  background: linear-gradient(90deg, #164e63, #373078);
+  color: white;
+}
+
+.dashboard {
+  background: linear-gradient(135deg, #080d1b, #101b35);
+  border-radius: 22px;
+}
+
+.dashboard h1 span {
+  background: linear-gradient(90deg, #22d3ee, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.stat-card,
+.quick-actions a {
+  background: linear-gradient(145deg, #172746, #111827);
+  color: #f8fafc;
+  border: 1px solid #334b70;
+  border-radius: 18px;
+  transition: all 0.25s ease;
+}
+
+.stat-card:hover,
+.quick-actions a:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 28px #06b6d41a;
+}
+
+.dashboard-desc,
+.stat-card p,
+.quick-actions p {
+  color: var(--text-muted);
+}
+
+.quick-icon {
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  border-radius: 14px;
+}
