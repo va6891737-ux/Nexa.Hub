@@ -53,8 +53,17 @@ function applyToolFilters() {
 
   document.querySelectorAll(".cards .card").forEach(card => {
     const category = card.dataset.category || "All";
-    const categoryMatch =
-      activeCategory === "All" || category === activeCategory;
+   const favorites = JSON.parse(
+  localStorage.getItem("nexahubFavorites") || "[]"
+);
+
+const name = card.querySelector("h3")?.innerText.trim() || "";
+
+const categoryMatch =
+  activeCategory === "All" ||
+  (activeCategory === "Favorites"
+    ? favorites.includes(name)
+    : category === activeCategory);
     const searchMatch = card.innerText.toLowerCase().includes(query);
 
     card.style.display =
