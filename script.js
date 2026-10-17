@@ -97,3 +97,13 @@ document.querySelectorAll(".cards .card").forEach(card => {
 
   card.prepend(button);
 });
+function updateToolCount() {
+  const cards = document.querySelectorAll(".cards .card");
+  const countElement = document.getElementById("toolCount");
+
+  if (countElement) {
+    countElement.textContent = cards.length;
+  }
+}
+
+updateToolCount();
