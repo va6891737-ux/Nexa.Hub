@@ -38,7 +38,15 @@ function filterCategory(category) {
     behavior: "smooth"
   });
 }
+document.querySelectorAll(".sidebar-link").forEach(link => {
+  link.addEventListener("click", function () {
+    document.querySelectorAll(".sidebar-link").forEach(item => {
+      item.classList.remove("active");
+    });
 
+    this.classList.add("active");
+  });
+});
 function applyToolFilters() {
   const input = document.getElementById("searchInput");
   const query = input ? input.value.toLowerCase().trim() : "";
