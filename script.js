@@ -65,3 +65,6 @@ function applyToolFilters() {
 function searchTools() {
   applyToolFilters();
 }
+<button class="favorite-btn"
+  onclick="toggleFavorite(event, this)"
+  aria-label="Add YouTube to favorites">☆</button>
