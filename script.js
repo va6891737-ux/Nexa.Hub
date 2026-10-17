@@ -522,3 +522,15 @@ function searchTools() {
         }
     });
 }
+function searchTools() {
+  const input = document.getElementById("searchInput");
+  const cards = document.querySelectorAll(".card");
+  const query = input.value.toLowerCase().trim();
+
+  cards.forEach((card) => {
+    const text = card.innerText.toLowerCase();
+    card.style.display = text.includes(query) ? "" : "none";
+  });
+}
+
+
