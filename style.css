@@ -2047,3 +2047,63 @@ body {
     gap: 12px;
   }
 }
+/* NexaHub Mobile Responsive Design */
+@media (max-width: 600px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 40px 16px;
+  }
+
+  .dashboard {
+    padding: 20px 14px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quick-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .card {
+    min-width: 0;
+    padding: 14px 10px;
+  }
+
+  .card h3 {
+    overflow-wrap: anywhere;
+  }
+
+  .search-box input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
