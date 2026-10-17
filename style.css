@@ -2147,3 +2147,11 @@ body {
 .footer-copy {
   margin-top: 20px;
 }
+.favorite-btn {
+  float: right;
+  border: none;
+  background: transparent;
+  color: #ffd166;
+  font-size: 22px;
+  cursor: pointer;
+}
