@@ -703,21 +703,18 @@ EXPLORE TOOLS
 </div>
 </div>
 </section>
+
 <!-- PROFESSIONAL DASHBOARD -->
 <section id="dashboard" class="dashboard">
-  <p class="section-title">YOUR WORKSPACE</p>
-  <h1>Welcome to <span>NexaHub</span></h1>
-  <p class="dashboard-desc">
-    Your essential websites and digital tools in one place.
-  </p>
-
-  <div class="dashboard-search">
-    <input
-      type="search"
-      id="searchInput"
-      placeholder="Search your favorite websites..."
-      oninput="searchTools()"
-    >
+  <div class="dashboard-header">
+    <div>
+      <p class="section-title">YOUR WORKSPACE</p>
+      <h2>Welcome to <span>NexaHub</span></h2>
+      <p class="dashboard-desc">
+        Everything you need to learn, create and work smarter.
+      </p>
+    </div>
+    <button onclick="scrollToTools()">Explore All Tools ↗</button>
   </div>
 
   <div class="dashboard-stats">
@@ -728,18 +725,42 @@ EXPLORE TOOLS
     </div>
 
     <div class="stat-card">
-      <span>💻</span>
-      <h2>Learn</h2>
-      <p>Programming Tools</p>
+      <span>💼</span>
+      <h2>Career</h2>
+      <p>Jobs & Internships</p>
     </div>
 
     <div class="stat-card">
-      <span>⚡</span>
-      <h2>Quick</h2>
-      <p>Easy Access</p>
+      <span>💻</span>
+      <h2>Developer</h2>
+      <p>Coding & Projects</p>
+    </div>
+
+    <div class="stat-card">
+      <span>🎓</span>
+      <h2>Learning</h2>
+      <p>Courses & Education</p>
     </div>
   </div>
+
+  <h3 class="dashboard-subtitle">Quick Access</h3>
+
+  <div class="quick-actions">
+    <a href="https://www.canva.com" target="_blank" rel="noopener noreferrer">
+      🎨 <span>Design</span>
+    </a>
+    <a href="https://docs.google.com" target="_blank" rel="noopener noreferrer">
+      📄 <span>Documents</span>
+    </a>
+    <a href="https://sheets.google.com" target="_blank" rel="noopener noreferrer">
+      📊 <span>Spreadsheets</span>
+    </a>
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+      🧑‍💻 <span>Developer Tools</span>
+    </a>
+  </div>
 </section>
+<!-- END PROFESSIONAL DASHBOARD -->
 <!-- ================= ABOUT ================= -->
 <section id="about" class="about">
 <p class="section-title">
