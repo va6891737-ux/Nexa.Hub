@@ -94,3 +94,1603 @@ body {
 
     background:
         radial-gradient(
+            circle at center,
+            rgba(37, 99, 235, 0.35),
+            transparent 55%
+        );
+}
+
+.small-title {
+    letter-spacing: 5px;
+
+    font-size: 14px;
+
+    color: #c4b5fd;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(70px, 12vw, 150px);
+
+    line-height: 1;
+
+    color: #22d3ee;
+
+    text-shadow:
+        0 0 15px #22d3ee,
+        0 0 40px rgba(34, 211, 238, 0.5);
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero h2 {
+    margin-top: 30px;
+
+    font-size: 32px;
+}
+
+.description {
+    max-width: 650px;
+
+    margin: 20px auto;
+
+    color: #cbd5e1;
+
+    line-height: 1.7;
+}
+
+.hero button {
+    margin-top: 25px;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #06b6d4,
+            #8b5cf6
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 20px rgba(34, 211, 238, 0.4);
+
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 35px rgba(34, 211, 238, 0.7);
+}
+
+
+/* ==========================================
+   TOOLS SECTION
+   ========================================== */
+
+.tools-section {
+    padding: 100px 5%;
+
+    text-align: center;
+
+    background: #030a1c;
+}
+
+.section-title {
+    color: #22d3ee;
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+}
+
+.tools-section > h2,
+.about h2 {
+    font-size: 40px;
+
+    margin: 15px 0 50px;
+}
+
+
+/* ==========================================
+   NEXAHUB CARDS - FIXED HORIZONTAL
+   ========================================== */
+
+.cards {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    /* IMPORTANT */
+    align-items: flex-start;
+
+    gap: 25px;
+}
+
+
+/* ==========================================
+   WEBSITE CARD
+   ========================================== */
+
+.cards .card {
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+
+    /* IMPORTANT */
+    height: 230px;
+    min-height: 230px;
+    max-height: 230px;
+
+    flex: 0 0 260px;
+
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.98),
+            rgba(15, 23, 42, 0.75)
+        );
+
+    border: 1px solid rgba(34, 211, 238, 0.18);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    overflow: hidden;
+}
+
+
+.cards .card:hover {
+    transform: translateY(-8px);
+
+    border-color: #22d3ee;
+
+    box-shadow:
+        0 0 30px rgba(34, 211, 238, 0.3);
+}
+
+
+/* ==========================================
+   ICON
+   ========================================== */
+
+.cards .icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   CARD TITLE
+   ========================================== */
+
+.cards .card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   CARD DESCRIPTION
+   ========================================== */
+
+.cards .card p {
+    color: #94a3b8;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        gap: 20px;
+    }
+
+    .cards .card {
+        width: 230px;
+        min-width: 230px;
+        max-width: 230px;
+
+        flex: 0 0 230px;
+
+        height: 220px;
+        min-height: 220px;
+        max-height: 220px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    .cards {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .cards .card {
+        width: 100%;
+        max-width: 330px;
+        min-width: 0;
+
+        flex: none;
+
+        height: 210px;
+        min-height: 210px;
+        max-height: 210px;
+    }
+}
+
+
+/* ==========================================
+   CARD
+   ========================================== */
+
+.card {
+    width: 260px;
+
+    min-height: 230px;
+
+    flex: 0 0 260px;
+
+    padding: 35px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.98),
+            rgba(15, 23, 42, 0.75)
+        );
+
+    border: 1px solid rgba(34, 211, 238, 0.18);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #22d3ee;
+
+    box-shadow:
+        0 0 30px rgba(34, 211, 238, 0.3);
+}
+
+.icon {
+    font-size: 55px;
+
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 23px;
+
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #94a3b8;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   CALCULATOR
+   ========================================== */
+
+.calculator-box {
+    display: none;
+
+    max-width: 350px;
+
+    margin: 50px auto;
+
+    padding: 25px;
+
+    background: #0f172a;
+
+    border: 1px solid rgba(34, 211, 238, 0.4);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 30px rgba(34, 211, 238, 0.2);
+}
+
+#display {
+    width: 100%;
+
+    height: 65px;
+
+    margin-bottom: 20px;
+
+    padding: 10px;
+
+    font-size: 28px;
+
+    text-align: right;
+
+    color: white;
+
+    background: #020617;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+}
+
+.calculator-buttons {
+    display: grid;
+
+   .cards {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.cards .card {
+    width: 260px;
+    height: 230px;
+    flex: 0 0 260px;
+    box-sizing: border-box;
+}
+
+    gap: 10px;
+}
+
+.calculator-buttons button {
+    height: 55px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #1e293b;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.calculator-buttons button:hover {
+    background: #0891b2;
+
+    box-shadow:
+        0 0 15px rgba(34, 211, 238, 0.4);
+}
+
+.calculator-buttons .equal {
+    grid-column: span 2;
+
+    background:
+        linear-gradient(
+            90deg,
+            #06b6d4,
+            #8b5cf6
+        );
+}
+
+
+/* ==========================================
+   FILE MANAGER
+   ========================================== */
+
+.files-section {
+    padding: 80px 7%;
+
+    text-align: center;
+
+    background: #030a1c;
+}
+
+.files-section .section-title {
+    color: #22d3ee;
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+}
+
+.files-section h2 {
+    font-size: 40px;
+
+    margin: 15px 0 30px;
+
+    color: white;
+}
+
+#fileInput {
+    display: block;
+
+    margin: 20px auto;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 15px;
+
+    color: #cbd5e1;
+
+    background: #0f172a;
+
+    border: 1px solid rgba(34, 211, 238, 0.3);
+
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+#fileInput:hover {
+    border-color: #22d3ee;
+
+    box-shadow:
+        0 0 20px rgba(34, 211, 238, 0.25);
+}
+
+.file-list {
+    max-width: 800px;
+
+    margin: 30px auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.file-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 16px 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.95),
+            rgba(15, 23, 42, 0.7)
+        );
+
+    border: 1px solid rgba(34, 211, 238, 0.2);
+
+    border-radius: 14px;
+
+    color: white;
+
+    text-align: left;
+}
+
+.file-item small {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #94a3b8;
+}
+
+.file-item button {
+    border: none;
+
+    padding: 9px 12px;
+
+    margin-left: 5px;
+
+    border-radius: 8px;
+
+    background: #1e293b;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.file-item button:hover {
+    background: #0891b2;
+
+    box-shadow:
+        0 0 15px rgba(34, 211, 238, 0.4);
+}
+
+
+/* ==========================================
+   NOTES
+   ========================================== */
+
+.notes-section {
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background: #020617;
+}
+
+.notes-section .section-title {
+    color: #22d3ee;
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+}
+
+.notes-section h2 {
+    font-size: 40px;
+
+    margin: 15px 0 30px;
+
+    color: white;
+}
+
+#notesArea {
+    display: block;
+
+    width: 100%;
+
+    max-width: 800px;
+
+    height: 220px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    resize: vertical;
+
+    background: #0f172a;
+
+    color: white;
+
+    border: 1px solid rgba(34, 211, 238, 0.25);
+
+    border-radius: 16px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    box-shadow:
+        0 0 25px rgba(34, 211, 238, 0.08);
+}
+
+#notesArea::placeholder {
+    color: #64748b;
+}
+
+#notesArea:focus {
+    border-color: #22d3ee;
+
+    box-shadow:
+        0 0 25px rgba(34, 211, 238, 0.25);
+}
+
+.notes-buttons {
+    margin-top: 20px;
+}
+
+.notes-buttons button {
+    padding: 12px 22px;
+
+    margin: 5px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #1e293b;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.notes-buttons button:first-child {
+    background:
+        linear-gradient(
+            90deg,
+            #06b6d4,
+            #8b5cf6
+        );
+}
+
+.notes-buttons button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(34, 211, 238, 0.35);
+}
+
+#notesStatus {
+    margin-top: 15px;
+
+    color: #22d3ee;
+}
+
+
+/* ==========================================
+   ABOUT
+   ========================================== */
+
+.about {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #020617;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about > p:last-child {
+    color: #94a3b8;
+
+    max-width: 900px;
+
+    margin: 25px auto 0;
+
+    line-height: 1.8;
+
+    text-align: justify;
+
+    padding: 0 20px;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #64748b;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* ==========================================
+   JAVA CARD
+   ========================================== */
+
+.java-card {
+    text-decoration: none;
+
+    color: white;
+
+    display: block;
+}
+
+
+/* ==========================================
+   NEXAHUB CALCULATOR CARD
+   ========================================== */
+
+.calculator-card {
+    min-height: 230px !important;
+
+    height: auto !important;
+
+    padding: 25px 20px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    overflow: hidden !important;
+
+    box-sizing: border-box !important;
+}
+
+.calculator-card .icon {
+    font-size: 45px;
+
+    margin-bottom: 8px;
+}
+
+.calculator-card h3 {
+    font-size: 22px;
+
+    margin: 5px 0;
+}
+
+.calculator-card p {
+    margin-bottom: 15px;
+}
+
+.calculator-card .calculator-box {
+    width: 100% !important;
+
+    max-width: 260px !important;
+
+    margin: 0 auto !important;
+
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    box-shadow: none !important;
+
+    box-sizing: border-box !important;
+}
+
+.calculator-card #calculatorDisplay {
+    width: 100% !important;
+
+    height: 45px !important;
+
+    margin-bottom: 8px !important;
+
+    padding: 8px !important;
+
+    box-sizing: border-box !important;
+
+    background: #020617 !important;
+
+    color: #22d3ee !important;
+
+    border: 1px solid rgba(34, 211, 238, 0.3) !important;
+
+    border-radius: 8px !important;
+
+    text-align: right;
+
+    font-size: 19px;
+}
+
+.calculator-card .calculator-buttons {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns: repeat(4, 1fr) !important;
+
+    gap: 5px !important;
+
+    box-sizing: border-box !important;
+}
+
+.calculator-card .calculator-buttons button {
+    width: 100% !important;
+
+    height: 38px !important;
+
+    padding: 3px !important;
+
+    border: none !important;
+
+    border-radius: 7px !important;
+
+    background: #1e293b !important;
+
+    color: white !important;
+
+    font-size: 14px !important;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-sizing: border-box !important;
+}
+
+.calculator-card .calculator-buttons button:hover {
+    background: #0891b2 !important;
+}
+
+.calculator-card .calculator-buttons .zero {
+    grid-column: span 2 !important;
+}
+
+.calculator-card .calculator-buttons .equal {
+    background:
+        linear-gradient(
+            90deg,
+            #06b6d4,
+            #8b5cf6
+        ) !important;
+}
+/* ==========================================
+   CALCULATOR TOGGLE
+   ========================================== */
+
+.calculator-card .calculator-box {
+    display: none !important;
+}
+
+.calculator-card.active .calculator-box {
+    display: block !important;
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        gap: 20px;
+
+        justify-content: center;
+    }
+
+    .card {
+        width: 230px;
+
+        flex: 0 0 230px;
+
+        min-height: 210px;
+    }
+
+    .hero h1 {
+        font-size: 90px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: 550px;
+
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .tools-section {
+        padding: 70px 15px;
+    }
+
+    .tools-section > h2,
+    .about h2 {
+        font-size: 30px;
+    }
+
+
+    /* Cards mobile */
+
+    .cards {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+
+        max-width: 330px;
+
+        flex: 0 0 100%;
+
+        min-height: 210px;
+
+        padding: 35px 20px;
+    }
+
+    .icon {
+        font-size: 50px;
+    }
+
+    .card h3 {
+        font-size: 21px;
+    }
+
+
+    .files-section h2,
+    .notes-section h2 {
+        font-size: 30px;
+
+        white-space: normal;
+    }
+
+    .file-item {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+    .file-item button {
+        margin-top: 5px;
+    }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+   ========================================== */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .card {
+        padding: 30px 15px;
+
+        max-width: 300px;
+    }
+
+    .icon {
+        font-size: 45px;
+    }
+}
+/* FORCE HORIZONTAL CARDS */
+#tools .cards {
+    display: grid !important;
+    grid-template-columns: repeat(4, 260px) !important;
+    gap: 25px !important;
+    width: 100% !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
+
+#tools .cards .card {
+    width: 260px !important;
+    min-width: 260px !important;
+    max-width: 260px !important;
+    height: 230px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 35px;
+}
+
+.search-box input {
+    width: 500px;
+    max-width: 90%;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #aaa;
+}
+
+.search-box input:focus {
+    border-color: #00d9ff;
+}
+
+/* SEARCH BOX */
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 40px;
+}
+
+.search-box input {
+    width: 500px;
+    max-width: 90%;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.10);
+    color: white;
+
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #cccccc;
+}
+
+.search-box input:focus {
+    border-color: #00d9ff;
+}
+/* PROFESSIONAL SEARCH BAR */
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 35px auto 45px;
+}
+
+.search-box input {
+    width: 520px;
+    height: 52px;
+    padding: 0 22px;
+
+    border: 1px solid rgba(0, 217, 255, 0.35);
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+
+    color: #ffffff;
+    font-size: 16px;
+
+    outline: none;
+    transition: 0.3s ease;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-box input:focus {
+    border-color: #00d9ff;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .search-box input {
+        width: 90%;
+    }
+}
+.search-box {
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    margin: 35px auto !important;
+}
+
+.search-box input {
+    width: 500px !important;
+    max-width: 90%;
+    height: 52px;
+    box-sizing: border-box;
+}
+/* PROFESSIONAL DASHBOARD */
+.dashboard {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 50px 25px;
+}
+
+.dashboard h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  color: #f8fafc;
+  margin: 10px 0;
+}
+
+.dashboard h1 span {
+  color: #22d3ee;
+}
+
+.dashboard-desc {
+  color: #94a3b8;
+  margin-bottom: 28px;
+}
+
+.dashboard-search input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #263548;
+  background: #0b1224;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.dashboard-search input:focus {
+  border-color: #22d3ee;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.stat-card {
+  background: linear-gradient(145deg, #101a30, #080e1d);
+  border: 1px solid #263548;
+  border-radius: 16px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: #22d3ee;
+}
+
+.stat-card span {
+  font-size: 28px;
+}
+
+.stat-card h2 {
+  color: #22d3ee;
+  font-size: 28px;
+  margin: 12px 0 5px;
+}
+
+.stat-card p {
+  color: #94a3b8;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+}
+/* =====================================
+   NEXAHUB PROFESSIONAL DASHBOARD
+   ===================================== */
+
+.dashboard {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 65px 6%;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(99, 102, 241, 0.13),
+            transparent 40%
+        );
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 35px;
+}
+
+.dashboard-header h2 {
+    font-size: clamp(30px, 4vw, 46px);
+    margin: 14px 0;
+    color: #f8fafc;
+}
+
+.dashboard-header h2 span {
+    color: #22d3ee;
+}
+
+.dashboard-desc {
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+.dashboard-header button {
+    border: 0;
+    border-radius: 10px;
+    padding: 14px 20px;
+    background: linear-gradient(100deg, #0891b2, #7c3aed);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.dashboard-header button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(34, 211, 238, 0.2);
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin: 30px 0 45px;
+}
+
+.dashboard .stat-card {
+    min-width: 0;
+    padding: 26px 22px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #111c33, #080e1d);
+    border: 1px solid rgba(148, 163, 184, 0.17);
+    transition: 0.25s;
+}
+
+.dashboard .stat-card:hover {
+    transform: translateY(-5px);
+    border-color: #22d3ee;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard .stat-card span {
+    font-size: 30px;
+}
+
+.dashboard .stat-card h2 {
+    margin: 16px 0 8px;
+    color: #67e8f9;
+    font-size: 25px;
+    overflow-wrap: anywhere;
+}
+
+.dashboard .stat-card p {
+    color: #a3b2c8;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.dashboard-subtitle {
+    font-size: 24px;
+    color: #f8fafc;
+    margin-bottom: 20px;
+}
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.quick-actions a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 85px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #0d172b;
+    border: 1px solid #26354b;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.25s;
+}
+
+.quick-actions a span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.quick-actions a:hover {
+    transform: translateY(-4px);
+    border-color: #818cf8;
+    background: #121f38;
+}
+
+@media (max-width: 950px) {
+    .dashboard-stats,
+    .quick-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        padding: 45px 18px;
+    }
+
+    .dashboard-header {
+        align-items: flex-start;
+    }
+
+    .dashboard-header button {
+        width: 100%;
+    }
+
+    .dashboard-stats,
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard .stat-card {
+        padding: 22px;
+    }
+}
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 22px;
+}
+
+.quick-actions a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+    padding: 22px 18px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #131f38, #0a1020);
+    border: 1px solid #293b55;
+    color: #f1f5f9;
+    text-decoration: none;
+    transition: transform .25s, border-color .25s, box-shadow .25s;
+}
+
+.quick-actions a:hover {
+    transform: translateY(-6px);
+    border-color: #22d3ee;
+    box-shadow: 0 12px 28px #06b6d426;
+}
+
+.quick-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #164e63, #4338ca);
+    font-size: 24px;
+}
+
+.quick-actions strong {
+    display: block;
+    font-size: 15px;
+}
+
+.quick-actions p {
+    margin: 6px 0 0;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.quick-arrow {
+    margin-left: auto;
+    align-self: flex-start;
+    color: #67e8f9;
+}
+
+@media (max-width: 950px) {
+    .quick-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+}
+/* FORCE QUICK ACCESS COLORS */
+.dashboard .quick-actions a {
+    background: linear-gradient(135deg, #172554, #312e81) !important;
+    border: 1px solid #06b6d4 !important;
+    color: #ffffff !important;
+    border-radius: 18px !important;
+    box-shadow: 0 5px 20px rgba(6, 182, 212, 0.12) !important;
+}
+
+.dashboard .quick-actions a:hover {
+    background: linear-gradient(135deg, #0e7490, #6d28d9) !important;
+    border-color: #a5f3fc !important;
+    transform: translateY(-5px);
+}
+
+.dashboard .quick-icon {
+    background: linear-gradient(135deg, #06b6d4, #7c3aed) !important;
+}
+
+.dashboard .quick-actions p {
+    color: #cbd5e1 !important;
+}
+
+.dashboard .quick-arrow {
+    color: #67e8f9 !important;
+}
+/* PROFESSIONAL NEXAHUB DASHBOARD */
+:root {
+  --bg-main: #080d1b;
+  --bg-card: #111c33;
+  --accent: #22d3ee;
+  --purple: #8b5cf6;
+  --text-main: #f8fafc;
+  --text-muted: #a9b8d0;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #111c33, #090f20);
+  border-right: 1px solid #263957;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.sidebar button,
+.sidebar a {
+  transition: all 0.25s ease;
+  border-radius: 10px;
+}
+
+.sidebar button:hover,
+.sidebar a:hover {
+  background: linear-gradient(90deg, #164e63, #373078);
+  color: white;
+}
+
+.dashboard {
+  background: linear-gradient(135deg, #080d1b, #101b35);
+  border-radius: 22px;
+}
+
+.dashboard h1 span {
+  background: linear-gradient(90deg, #22d3ee, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.stat-card,
+.quick-actions a {
+  background: linear-gradient(145deg, #172746, #111827);
+  color: #f8fafc;
+  border: 1px solid #334b70;
+  border-radius: 18px;
+  transition: all 0.25s ease;
+}
+
+.stat-card:hover,
+.quick-actions a:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 28px #06b6d41a;
+}
+
+.dashboard-desc,
+.stat-card p,
+.quick-actions p {
+  color: var(--text-muted);
+}
+
+.quick-icon {
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  border-radius: 14px;
+}
