@@ -1594,3 +1594,29 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* FORCE QUICK ACCESS COLORS */
+.dashboard .quick-actions a {
+    background: linear-gradient(135deg, #172554, #312e81) !important;
+    border: 1px solid #06b6d4 !important;
+    color: #ffffff !important;
+    border-radius: 18px !important;
+    box-shadow: 0 5px 20px rgba(6, 182, 212, 0.12) !important;
+}
+
+.dashboard .quick-actions a:hover {
+    background: linear-gradient(135deg, #0e7490, #6d28d9) !important;
+    border-color: #a5f3fc !important;
+    transform: translateY(-5px);
+}
+
+.dashboard .quick-icon {
+    background: linear-gradient(135deg, #06b6d4, #7c3aed) !important;
+}
+
+.dashboard .quick-actions p {
+    color: #cbd5e1 !important;
+}
+
+.dashboard .quick-arrow {
+    color: #67e8f9 !important;
+}
