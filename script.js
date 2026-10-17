@@ -77,3 +77,23 @@ function searchTools() {
 <button class="favorite-btn"
   onclick="toggleFavorite(event, this)"
   aria-label="Add YouTube to favorites">☆</button>
+document.querySelectorAll(".cards .card").forEach(card => {
+  if (card.querySelector(".favorite-btn")) return;
+
+  const button = document.createElement("button");
+  button.className = "favorite-btn";
+
+  const name = card.querySelector("h3")?.innerText.trim() || "";
+  const favorites = JSON.parse(
+    localStorage.getItem("nexahubFavorites") || "[]"
+  );
+
+  button.textContent = favorites.includes(name) ? "⭐" : "☆";
+  button.setAttribute("aria-label", "Toggle favorite");
+
+  button.addEventListener("click", event => {
+    toggleFavorite(event, button);
+  });
+
+  card.prepend(button);
+});
