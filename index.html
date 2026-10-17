@@ -162,9 +162,12 @@ EXPLORE TOOLS
 <p>Read latest news</p>
 </div>
 <!-- 02 YOUTUBE -->
-<div class="card" onclick="openWebsite('https://www.youtube.com')">
+<div class="card" data-category="All" data-favorite="false" onclick="openWebsite('https://www.youtube.com')">
 <div class="icon">▶️</div>
 <h3>YouTube</h3>
+ <button class="favorite-btn"
+  onclick="toggleFavorite(event, this)"
+  aria-label="Add YouTube to favorites">☆</button>
 <p>Watch and explore videos</p>
 </div>
 <!-- 03 INSTAGRAM -->
