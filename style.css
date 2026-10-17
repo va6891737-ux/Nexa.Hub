@@ -1983,3 +1983,67 @@ body {
   color: #aab5d1;
   margin-bottom: 0;
 }
+/* ===== MOBILE RESPONSIVE DASHBOARD ===== */
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 14px;
+    position: relative;
+    gap: 8px;
+  }
+
+  .sidebar-logo {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .sidebar-link {
+    padding: 10px 12px;
+  }
+
+  .sidebar-footer {
+    margin-top: 8px;
+  }
+
+  .dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-header button {
+    width: 100%;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 14px;
+  }
+
+  .stat-card h2 {
+    font-size: 19px;
+  }
+
+  .quick-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tools-section {
+    padding: 16px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
