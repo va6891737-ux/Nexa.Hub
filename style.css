@@ -1749,3 +1749,95 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* ===== PROFESSIONAL SIDEBAR ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  padding: 28px 18px;
+  box-sizing: border-box;
+  background: #10152b;
+  border-right: 1px solid #283252;
+  color: #ffffff;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-logo {
+  color: #ffffff;
+  font-size: 25px;
+  margin: 0 0 25px;
+}
+
+.sidebar-logo::first-letter {
+  color: #6c8cff;
+}
+
+.sidebar-label {
+  color: #8994b8;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin: 0 0 8px;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 13px 14px;
+  color: #c3cbe2;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: linear-gradient(100deg, #5145cd, #287ce8);
+  color: #ffffff;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 14px 8px;
+  border-top: 1px solid #283252;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-footer strong {
+  font-size: 13px;
+}
+
+.sidebar-footer p {
+  color: #8994b8;
+  font-size: 11px;
+  margin: 5px 0 0;
+}
+
+/* Keep the main website visible beside the sidebar */
+@media (min-width: 900px) {
+  body {
+    padding-left: 240px;
+  }
+}
+
+@media (max-width: 899px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 18px;
+  }
+
+  .sidebar-logo {
+    margin-bottom: 8px;
+  }
+
+  .sidebar-footer {
+    margin-top: 12px;
+  }
+}
