@@ -1915,3 +1915,71 @@ body {
     max-width: 100%;
   }
 }
+/* ===== PREMIUM QUICK ACCESS CARDS ===== */
+
+.quick-actions a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  background: linear-gradient(135deg, #171e38, #20294a);
+  border: 1px solid #303c61;
+  border-radius: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.quick-actions a > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.quick-actions a strong {
+  font-size: 15px;
+}
+
+.quick-actions a p {
+  margin: 6px 0 0;
+  color: #aab5d1;
+  font-size: 13px;
+}
+
+.quick-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  background: #30365c;
+  border-radius: 13px;
+  font-size: 23px;
+}
+
+.quick-arrow {
+  color: #8b9cff;
+  font-size: 20px;
+}
+
+.quick-actions a:hover {
+  border-color: #7988ff;
+  background: linear-gradient(135deg, #20294a, #302958);
+  transform: translateY(-3px);
+}
+
+.stat-card {
+  padding: 22px;
+  border: 1px solid #303c61;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #171e38, #20294a);
+}
+
+.stat-card h2 {
+  margin: 12px 0 6px;
+}
+
+.stat-card p {
+  color: #aab5d1;
+  margin-bottom: 0;
+}
